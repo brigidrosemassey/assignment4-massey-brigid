@@ -43,13 +43,14 @@ p {
   margin: 0;
   padding: 0;
 }
-.container {
-  margin: 0 auto;
-  max-width: 1024px;
-}
+
 main {
   min-height: 90vh;
   margin-top: 5%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
 }
 .top {
   min-height: 30vh;
@@ -106,9 +107,6 @@ footer {
   position: relative;
   left: 360px;
 }
-.container {
-  max-width: 1024px;
-}
 /*-------------------------
 
 
@@ -158,3 +156,17 @@ transition: .3s;
 .flip-card-back h2 {
   padding: 5px;
 }
+.sun-animation {
+  width: 200px;
+  top: 1400px;
+  position: absolute;
+  animation: wind 20s linear infinite reverse;
+  z-index: 100;
+}
+@keyframes wind {
+  from{
+    left: -300px;
+  }
+  to{
+    left: 1000px;
+  }
