@@ -13,11 +13,10 @@ h1 {
 font-family: 'Dancing Script', cursive;
 font-size: 40px;
 letter-spacing: 3px;
-margin: 30px 0;
+text-align: center;
+padding-top: 20px;
 text-transform: uppercase;
-position: relative;
-left: 660px;
-background: -webkit-linear-gradient(#ffeb3b, #ff9800);
+background: -webkit-linear-gradient(#ffeb3b, #ca4b24);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
@@ -25,51 +24,105 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h7 {
   font-family: helvetica;
   line-height: 150%;
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding-top: 10px;
 }
 p {
   font-family: 'Open Sans', sans-serif;
-  margin: 20px 0;
+  margin: 10px 10px;
 }
-#header {
+header {
   background: lightblue;
   width: 100%;
   height: 100px;
   margin: 0;
   padding: 0;
 }
-
 main {
-  min-height: 90vh;
+  min-height: 65vh;
   margin-top: 5%;
 }
 .container {
   margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
   max-width: 1024px;
+  position: relative;
+  z-index: 98;
+}
+.container1 {
+  margin: 0 auto;
+  padding-top: 10px;
+  max-width: 1024px;
+  position: relative;
+}
+.container2 {
+  margin: 0 auto;
+  padding-top: 40px;
+  max-width: 1024px;
+  position: relative;
+}
+.container3 {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  max-width: 1000px;
+  position: relative;
 }
 .top {
   min-height: 30vh;
-  margin-top: 4%;
+  margin-top: 50px;
 }
 span {
   color: lightblue;
 }
-.left-half,
-.right-half {
-  width: 45%;
-  display: inline-block;
+
+.right-half img {
+  position: absolute;
+  left: 500px;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+.left-half {
+  width: 350px;
+  position: relative;
+  left: 100px;
+  margin-bottom: 20px;
 }
-.left-half img {
-  width: 100%;
+.left-half p {
+  margin-left: 0px;
+
 }
-.right-half {
-  vertical-align: top;
-  padding: 45px;
+.middle {
+  min-height: 30vh;
+  margin-top: 4%;
 }
+.right {
+  position: absolute;
+  left:500px;
+  width: 350px;
+  margin: 20px;
+}
+.right p {
+  margin-top: 0;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+.left img{
+  position: relative;
+left:80px;
+  height: 300px;
+  width: 400px;
+  margin: 20px;
+}
+/*-
 /*=======================================
 
   footer
@@ -85,8 +138,8 @@ footer {
   Photography
 
 ========================================*/
-.float-left{
-  float: left;
+.natural-beauty {
+  text-align: center;
 }
 .natural-beauty img {
   box-sizing: border-box;
@@ -100,10 +153,6 @@ footer {
   transform: scale(1.5);
   transition: .3s;
 }
-.container h3 {
-  position: relative;
-  left: 360px;
-}
 /*-------------------------
 
 
@@ -116,7 +165,9 @@ Flip Card Styling
   height: 250px;
   display: inline-block;
   background: transparent;
-  margin: 10px;
+  margin: 20px 20px;
+position: relative;
+left: 60px;
 }
 .flip-card img {
   width:100%
@@ -150,19 +201,20 @@ Flip Card Styling
 color: purple;
 transition: .3s;
 }
-.flip-card-back h2 {
+.flip-card-back h5 {
   padding: 5px;
 }
 .sun-animation {
-  width: 200px;
-  top: 1400px;
+  width: 150px;
+  top: 500px;
+  margin: 15px;
   position: absolute;
   animation: wind 20s linear infinite reverse;
   z-index: 100;
 }
 @keyframes wind {
   from{
-    left: -300px;
+    left: 100px;
   }
   to{
     left: 1000px;
