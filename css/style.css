@@ -14,22 +14,29 @@ font-family: 'Dancing Script', cursive;
 font-size: 40px;
 letter-spacing: 3px;
 text-align: center;
-padding-top: 20px;
+padding-top: 40px;
 text-transform: uppercase;
-background: -webkit-linear-gradient(#ffeb3b, #ca4b24);
+background: -webkit-linear-gradient(#e9d66b, #9c7c38);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
-h2,
+h2 {
+  font-family: helvetica;
+  line-height: 150%;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
 h3,
 h4,
 h5,
 h6,
-h7 {
+h7,
+h8 {
   font-family: helvetica;
   line-height: 150%;
   font-size: 30px;
   margin-bottom: 10px;
+  padding-left: 10px;
   padding-top: 10px;
 }
 p {
@@ -49,7 +56,6 @@ main {
 }
 .container {
   margin: 0 auto;
-  padding-top: 10px;
   padding-bottom: 10px;
   max-width: 1024px;
   position: relative;
@@ -75,6 +81,7 @@ main {
   position: relative;
 }
 .top {
+  padding-top: 20px;
   min-height: 30vh;
   margin-top: 50px;
 }
@@ -122,20 +129,13 @@ left:80px;
   width: 400px;
   margin: 20px;
 }
-/*-
-/*=======================================
-
-  footer
-
-========================================*/
-footer {
-  text-align: center;
-  padding: 40px 0;
-  background: lightblue;
+.myfavorite {
+  float: right;
+  margin: 0 50px 50px;
 }
 /*=======================================
 
-  Photography
+  Hover Grid
 
 ========================================*/
 .natural-beauty {
@@ -153,6 +153,16 @@ footer {
   transform: scale(1.5);
   transition: .3s;
 }
+/*=======================================
+
+  footer
+
+========================================*/
+footer {
+  text-align: center;
+  padding: 40px 0;
+  background: lightblue;
+}
 /*-------------------------
 
 
@@ -165,7 +175,7 @@ Flip Card Styling
   height: 250px;
   display: inline-block;
   background: transparent;
-  margin: 20px 20px;
+  margin: 30px 20px;
 position: relative;
 left: 60px;
 }
@@ -193,29 +203,33 @@ left: 60px;
   backface-visibility: hidden;
 }
 .flip-card-back {
-  color: teal;
+  color: #9c7c38;
   transform: rotateY(190deg);
   padding: 50px 5px 0;
-}
-.flip-card-back a:hover {
-color: purple;
-transition: .3s;
 }
 .flip-card-back h5 {
   padding: 5px;
 }
 .sun-animation {
   width: 150px;
-  top: 500px;
-  margin: 15px;
+  top: 1500px;
+left:190px;
   position: absolute;
-  animation: wind 20s linear infinite reverse;
+  animation: wind 13s linear infinite reverse;
   z-index: 100;
-}
-@keyframes wind {
-  from{
-    left: 100px;
   }
-  to{
-    left: 1000px;
+.sun-animation2 {
+  width: 150px;
+  top: 1500px;
+  left: 1600px;
+  position: absolute;
+  animation: wind 13s linear infinite reverse;
+  }
+  @keyframes wind {
+    from{
+      top: -300px;
+    }
+    to{
+      bottom: 1000px;
+    }
   }
