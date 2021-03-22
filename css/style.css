@@ -1,0 +1,160 @@
+/*=======================================
+
+  Universal Styling
+
+========================================*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+font-family: 'Dancing Script', cursive;
+font-size: 40px;
+color: #333;
+letter-spacing: 3px;
+margin: 30px 0;
+text-transform: uppercase;
+position: relative;
+left: 660px;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: helvetica;
+  line-height: 150%;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+p,
+ul {
+  font-family: 'Open Sans', sans-serif;
+}
+p {
+  margin: 20px 0;
+}
+#header {
+  background: lightblue;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+main {
+  min-height: 90vh;
+  margin-top: 5%;
+}
+.top {
+  min-height: 30vh;
+  margin-top: 4%;
+}
+/*=======================================
+
+  footer
+
+========================================*/
+footer {
+  text-align: center;
+  padding: 40px 0;
+  background: lightblue;
+}
+/*=======================================
+
+  Home Page
+
+========================================*/
+.left-half,
+.right-half {
+  width: 45%;
+  display: inline-block;
+}
+.left-half img {
+  width: 100%;
+}
+.right-half {
+  vertical-align: top;
+  padding: 45px;
+}
+/*=======================================
+
+  Photography
+
+========================================*/
+.float-left{
+  float: left;
+}
+.natural-beauty img {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  padding: 30px;
+  transition: .3s;
+}
+.natural-beauty img:hover {
+  transform: scale(1.5);
+  transition: .3s;
+}
+.container h3 {
+  position: relative;
+  left: 360px;
+}
+.container {
+  max-width: 1024px;
+}
+/*-------------------------
+
+
+Flip Card Styling
+
+
+---------------------------*/
+.flip-card {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  background: transparent;
+  margin: 10px;
+}
+.flip-card img {
+  width:100%
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform .6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 1px 4px 0 black;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(190deg);
+}
+.flip-card-front,
+.flip-card-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  color: teal;
+  transform: rotateY(190deg);
+  padding: 50px 5px 0;
+}
+.flip-card-back a:hover {
+color: purple;
+transition: .3s;
+}
+.flip-card-back h2 {
+  padding: 5px;
+}
