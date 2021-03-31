@@ -12,5 +12,4 @@ All images were taken by an iPhone by Brigid Massey
 I, Brigid Massey, have read the point deduction list and understand that I will lose points for missing items.
 
 <img src="brigidatfort.jpg"
-     alt="Brigid Massey"
-     style="float: left; margin-right: 10px;" />
+     alt="Brigid Massey"/>
